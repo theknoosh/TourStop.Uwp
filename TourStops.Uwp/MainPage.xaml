@@ -26,19 +26,19 @@
             <TextBlock x:Name="TextBlock1" Text="Buckingham Fountain" Margin="6"/>
             <Button x:Name="MapButton" Grid.Column="1" Content="Map" VerticalAlignment="Top"
                     Margin="3"
-                    HorizontalAlignment="Stretch"/>
+                    HorizontalAlignment="Stretch" Click="MapButton_Click"/>
             <Button x:Name="PhoneButton" Grid.Column="2" Content="555-1212" VerticalAlignment="Top"
                     Margin="3"
-                    HorizontalAlignment="Stretch"/>
+                    HorizontalAlignment="Stretch" Click="PhoneButton_Click"/>
         </Grid>
-        <StackPanel x:Name="DurationMessage" Grid.Row ="2">
+        <StackPanel Grid.Row ="2">
             <Rectangle Fill="LightBlue"
                            Height="10"
                            Width="auto"/>
             <Button x:Name="CalcButton" Content="Calculate Tour Duration"
                     Margin="0,20,0,0"
-                    HorizontalAlignment="Stretch"/>
-            <TextBlock Text="..." HorizontalAlignment="Stretch" TextAlignment="Center"/>
+                    HorizontalAlignment="Stretch" Click="CalcButton_Click"/>
+            <TextBlock x:Name="DurationMessage" Text="..." HorizontalAlignment="Stretch" TextAlignment="Center"/>
         </StackPanel>
     </Grid>
 </Page>
